@@ -1,2 +1,85 @@
----
----
+--- --- $breakpoints: ( "phone": 400px, "phone-wide": 481px, "phablet": 561px, "tablet-small": 641px, "tablet": 769px, "tablet-wide": 1024px, "desktop": 1248px, "desktop-wide": 1440px, "desktop-lg": 1680px, "full-hd": 1920px);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type==max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    @include mq('full-hd') {
+        background-color: #827958;
+    }
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1920px;
+    height: 2200px;
+    background: url(../../img/bgc1n.gif) 50% 0% no-repeat, url(../../img/bgc2r.gif) 50% 0% repeat-y, url(../../img/bgc3r.gif) 50% 35% no-repeat, rgb(255, 241, 171);
+    background-size: 110%;
+    @include mq('tablet', max) {}
+    @include mq('tablet-small', max) {
+        background-position: 30% 0, 30% 0, 30% 32%;
+        background-size: 121%;
+    }
+    @include mq ('phablet', max) {
+        background-size: 162%;
+    }
+}
+
+.left__side {
+    @include mq('full-hd') {
+        width: 100px;
+        height: 2200px;
+        background-image: url(../../img/cimon.gif);
+        background-repeat: repeat-y;
+        float: left;
+    }
+}
+
+.right__side {
+    @include mq('full-hd') {
+        width: 100px;
+        height: 2200px;
+        background: url(../../img/cimon2.gif) 100% 100% repeat-y;
+        float: right;
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    height: 1850px;
+    width: 100%;
+    @include mq ('phone-wide', max) {
+  
+    }
+}
+
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: #dfcf95;
+}
