@@ -1,0 +1,127 @@
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    background-color: #827958;
+    position: relative;
+&::-webkit-scrollbar{
+    display: none;
+}
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.container {
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+//    overflow-x: hidden;
+//    overflow-y: scroll;
+//    margin: 0 auto;
+//    box-sizing: border-box;
+//    @include mediaQueries('desktop-hd') {
+//    width: 1920px;
+//}
+&__border__left{
+//     @include mediaQueries('desktop-lg', max) {
+//     display: none;
+//}
+     width: calc(10% - 80px);
+     max-height: 100%;
+     height: auto;
+     background: image-url("border_left.svg") left top;
+     background-repeat: repeat-y;
+     background-size: 110px 2486px;
+     float: left;
+     @include mediaQueries('desktop-hd') {
+     width: 110px;
+}
+}
+
+&__border__right {
+//     @include mediaQueries('desktop-lg', max) {
+//     display: none;
+//}
+     width: calc(10% - 80px);
+     max-height: 100%;
+     height: auto;
+     background: image-url("border_right.svg") right top;
+     background-repeat: repeat-y;
+     background-size: 110px 2486px;
+     float: right;
+     @include mediaQueries('desktop-hd') {
+     width: 110px;
+  }
+}
+
+&__background {
+     width: 1920px;
+     max-height: 100%;
+     height: auto;
+     margin: 0 auto;
+     background:
+     image-url("border_yell.svg") 50% 0% repeat-y,
+     image-url("background_yell_up.svg") 50% 0% no-repeat,
+     image-url("background_yell_1.svg") 50% 0% repeat,
+     image-url("background_yell_2.svg") 50% 0% repeat,
+     image-url("background_yell_3.svg") 50% 0% repeat,
+     image-url("background_yell_4.svg") 50% 0% repeat,
+     image-url("background_yell_5.svg") 50% 0% repeat,
+     rgb(255,241,171);
+     background-size: 100%;
+     @include mediaQueries('desktop-hd') {
+     max-width: 1920px;
+}
+//     @include mediaQueries('desktop-lg', max) {
+//     margin-left: -7%;
+//}
+//     @include mediaQueries('desktop', max) {
+//     margin-left: -14%;
+//}
+//     @include mediaQueries ('desktop-sm', max) {
+//     margin-left: -20%;
+//}
+//     @include mediaQueries('tablet-lg', max){
+//     margin-left: -36%;
+//}
+//     @include mediaQueries('tablet', max){
+//     margin-left: -60%;
+//}
+//     @include mediaQueries('tablet-sm', max){
+//     margin-left: -83%;
+//}
+}
+&__content {
+     width: 500px;
+     margin: 0 auto;
+     padding-top: 50px;
+     @include mediaQueries('tablet', max){
+     margin-left: 32%;
+}
+}
+}
+
+main {
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    @include mediaQueries ('phone-lg', max) {
+    width: 320px;
+}
+}
+
+footer {
+//    width: 100%;
+//    height: 300px;
+//    background-color: #dfcf95;
+}
+
