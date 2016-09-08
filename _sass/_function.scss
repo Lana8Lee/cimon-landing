@@ -1,4 +1,4 @@
 
 @function image-url($image_name) {
-@return url("/images/" + $image_name);
+@return url("../images/" + $image_name);
 }
