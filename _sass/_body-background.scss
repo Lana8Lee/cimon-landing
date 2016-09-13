@@ -1,0 +1,15 @@
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background:
+    image-url("border_yellow.svg") top center repeat-y,
+    image-url("background_yellow_up.svg") top center no-repeat,
+    image-url("background_yellow_1.svg") top center repeat-y,
+    image-url("background_yellow_2.svg") top center repeat-y,
+    image-url("background_yellow_3.svg") top center repeat-y,
+    image-url("background_yellow_4.svg") top center repeat-y,
+    image-url("background_yellow_5.svg") top center repeat-y,
+    rgb(255,241,171);
+    background-size: 1920px 3560px;
+}
