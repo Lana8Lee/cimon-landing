@@ -6,7 +6,7 @@
     overflow: hidden;
 
     &__rectangle--left {
-        width: image-position(30px);
+        width: image-position(10px);
         max-height: 100%;
         height: 100%;
         background-color: $background-border;
@@ -27,13 +27,13 @@
         z-index: 10;
     }
 
-    &__border--left{
-        width: image-position(110px);
+    &__border--left {
+        width: image-position(113px);
         max-height: 100%;
         height: 100%;
-        background: image-url("border_left.svg")right top;
+        background: image-url("border_left.svg") right top;
         background-repeat: repeat-y;
-        background-size: 110px 2486px;
+        background-size: 113px 4000px;
         position: absolute;
         top: 0;
         left: 0;
@@ -41,12 +41,12 @@
     }
 
     &__border--right {
-        width: image-position(90px);
+        width: image-position(85px);
         max-height: 100%;
         height: 100%;
         background: image-url("border_right.svg") left top;
         background-repeat: repeat-y;
-        background-size: 110px 2486px;
+        background-size: 85px 4000px;
         position: absolute;
         top: 0;
         right: 0;
