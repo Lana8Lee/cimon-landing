@@ -1,0 +1,12 @@
+section {
+    width: 100%;
+    position: relative;
+    img {
+        position: absolute;
+    }
+}
+
+@import "section-1";
+@import "section-2";
+@import "section-3";
+@import "section-4";

@@ -1,15 +1,15 @@
 .container {
     width: 100%;
-    max-height: 100%;
-    height: 100%;
+    max-height: $height;
+    height: $height;
     position: relative;
     overflow: hidden;
 
     &__rectangle--left {
-        width: calc(50% - 930px);
+        width: image-position(30px);
         max-height: 100%;
         height: 100%;
-        background-color: #867F5E;
+        background-color: $background-border;
         position: absolute;
         top: 0;
         left: 0;
@@ -17,10 +17,10 @@
     }
 
     &__rectangle--right {
-        width: calc(50% - 950px);
+        width: image-position(10px);
         max-height: 100%;
         height: 100%;
-        background-color: #867F5E;
+        background-color: $background-border;
         position: absolute;
         top: 0;
         right: 0;
@@ -28,7 +28,7 @@
     }
 
     &__border--left{
-        width: calc(50% - 850px);
+        width: image-position(110px);
         max-height: 100%;
         height: 100%;
         background: image-url("border_left.svg")right top;
@@ -41,7 +41,7 @@
     }
 
     &__border--right {
-        width: calc(50% - 870px);
+        width: image-position(90px);
         max-height: 100%;
         height: 100%;
         background: image-url("border_right.svg") left top;

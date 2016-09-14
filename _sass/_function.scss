@@ -2,3 +2,7 @@
 @function image-url($image_name) {
 @return url("../images/" + $image_name);
 }
+
+@function image-position($x) {
+@return calc(50% - #{960px - $x});
+}

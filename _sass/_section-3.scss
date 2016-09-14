@@ -1,0 +1,37 @@
+.section {
+    &--3 {
+        height: 530px;
+    }
+    &__img {
+        &--3-1 {
+            width: 603px;
+            height: 1031px;
+            top: 6px;
+            left: image-position(0px);
+        }
+        &--3-2 {
+            width: 480px;
+            height: 401px;
+            top: 220px;
+            left: image-position(0px);
+        }
+        &--3-3 {
+            width: 1920px;
+            height: 34px;
+            top: 497px;
+            left: image-position(0px);
+        }
+        &--3-4 {
+            width: 244px;
+            height: 497px;
+            top: 0;
+            right: image-position(539px);
+        }
+        &--3-5 {
+            width: 564px;
+            height: 127px;
+            top: 371px;
+            right: image-position(0px);
+        }
+    }
+}
