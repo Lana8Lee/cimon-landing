@@ -49,7 +49,7 @@ header {
         -o-transition: color .2s ease-out, border-bottom-color .2s ease-out;
         transition: color .2s ease-out, border-bottom-color .2s ease-out;
             &:hover {
-                border-bottom: solid 1px $font-color;
+                border-bottom: solid 1px #827957;
                 color: #1c1b1a;
             }
             &--width {
