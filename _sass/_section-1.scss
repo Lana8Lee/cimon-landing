@@ -23,4 +23,38 @@
             z-index: 1;
         }
     }
+    &__figure {
+        &--left {
+            width: 800px;
+            height: 185px;
+            position: absolute;
+            bottom: 51px;
+            left: image-position(0px);
+            @extend .clearfix;
+            img {
+                width: 163px;
+                height: 182px;
+                float: left;
+                margin-right: 36px;
+            }
+        }
+        &--right {
+            width: 800px;
+            height: 185px;
+            position: absolute;
+            bottom: 54px;
+            right: image-position(0px);
+            img {
+                width: 163px;
+                height: 182px;
+                margin-left: 307px;
+            }
+        }
+    }
+}
+
+figure {
+    img {
+        position: static;
+    }
 }
