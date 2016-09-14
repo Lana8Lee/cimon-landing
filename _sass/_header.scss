@@ -2,4 +2,59 @@ header {
     width: $hdwidth;
     height: 155px;
     margin: 0 auto;
+    @extend .clearfix;
+}
+
+.nav {
+    padding: 1.5rem 3rem;
+    height: auto;
+    &__logo {
+        width: 175px;
+        margin-left: image-position(435px);
+        line-height: 127px;
+        float: left;
+        a {
+            font-family: $roboto-condensed;
+            color: $font-color;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+    &__list {
+        width: 50%;
+        float: right;
+        text-align: center;
+        line-height: 127px;
+        @extend .clearfix;
+        &__item {
+            display: block;
+            float: left;
+        }
+    }
+    &__link {
+        display: block;
+        width: 100px;
+        height: 100px;
+        font-family: $roboto;
+        font-size: 21px;
+        font-weight: 600;
+        text-decoration: none;
+        color: $font-color;
+        border-bottom: solid 1px transparent;
+        -webkit-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+        -moz-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+        -ms-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+        -o-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+        transition: color .2s ease-out, border-bottom-color .2s ease-out;
+            &:hover {
+                border-bottom: solid 1px $font-color;
+                color: #1c1b1a;
+            }
+            &--width {
+                width: 150px;
+            }
+            &--active {
+            }
+    }
 }
