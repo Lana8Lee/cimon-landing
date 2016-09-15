@@ -1,6 +1,7 @@
 header {
     width: 100%;
-    height: 525px;
+    height: auto;
+    max-height: 525px;
     @include mediaQueries("tablet") {
         height: 155px;
     }
@@ -36,6 +37,7 @@ header {
         }
     }
     &__list {
+        display: none;
         width: 100%;
         float: none;
         padding-top: 0;
@@ -48,6 +50,7 @@ header {
             width: 75%;
         }
         @include mediaQueries("tablet") {
+           display: block;
            width: 65%;
            float: right;
            line-height: 127px;
@@ -126,58 +129,5 @@ header {
             &--active {
             }
     }
-    &__btn {
-        @include mediaQueries("tablet") {
-            display: none;
-        }
-        display: block;
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        top: 62px;
-        right: 2%;
-        &__icon {
-            width: 40px;
-            height: 4px;
-            background-color: $font-color;
-            display: block;
-            border-radius: 50px;
-            margin-top: 32%;
-            -webkit-transition: .5s ease-in-out;
-            -moz-transition: .5s ease-in-out;
-            -ms-transition: .5s ease-in-out;
-            -o-transition: .5s ease-in-out;
-            transition: .5s ease-in-out;
-            &:before {
-                content: " ";
-                width: 40px;
-                height: 4px;
-                background-color: $font-color;
-                display: block;
-                border-radius: 50px;
-                margin-top: -9px;
-                position: absolute;
-                -webkit-transition: .25s ease-in-out;
-                -moz-transition: .25s ease-in-out;
-                -ms-transition: .25s ease-in-out;
-                -o-transition: .25s ease-in-out;
-                transition: .25s ease-in-out;
-            }
-            &:after {
-                content: " ";
-                width: 40px;
-                height: 4px;
-                background-color: $font-color;
-                display: block;
-                border-radius: 50px;
-                margin-top: 9px;
-                position: absolute;
-               -webkit-transition: .25s ease-in-out;
-                -moz-transition: .25s ease-in-out;
-                -ms-transition: .25s ease-in-out;
-                -o-transition: .25s ease-in-out;
-                transition: .25s ease-in-out;
-            }
-        }
-    }
 }
+@import"btn-menu";

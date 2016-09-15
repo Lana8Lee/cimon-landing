@@ -1,0 +1,111 @@
+.nav {
+    &__btn {
+        @include mediaQueries("tablet") {
+            display: none;
+        }
+        display: block;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 62px;
+        right: 2%;
+        cursor: pointer;
+        &__icon {
+            width: 40px;
+            height: 4px;
+            background-color: $font-color;
+            display: block;
+            border-radius: 50px;
+            margin-top: 32%;
+            -webkit-transition: .5s ease-in-out;
+            -moz-transition: .5s ease-in-out;
+            -ms-transition: .5s ease-in-out;
+            -o-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+            &:before {
+                content: " ";
+                width: 40px;
+                height: 4px;
+                background-color: $font-color;
+                display: block;
+                border-radius: 50px;
+                margin-top: -9px;
+                position: absolute;
+                -webkit-transition: .25s ease-in-out;
+                -moz-transition: .25s ease-in-out;
+                -ms-transition: .25s ease-in-out;
+                -o-transition: .25s ease-in-out;
+                transition: .25s ease-in-out;
+            }
+            &:after {
+                content: " ";
+                width: 40px;
+                height: 4px;
+                background-color: $font-color;
+                display: block;
+                border-radius: 50px;
+                margin-top: 9px;
+                position: absolute;
+                -webkit-transition: .25s ease-in-out;
+                -moz-transition: .25s ease-in-out;
+                -ms-transition: .25s ease-in-out;
+                -o-transition: .25s ease-in-out;
+                transition: .25s ease-in-out;
+            }
+        }
+    }
+}
+
+.active {
+    width: 40px;
+    height: 4px;
+    background-color: $font-color;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 32%;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+        &:after {
+            content: " ";
+            width: 40px;
+            height: 4px;
+            background-color: $font-color;
+            display: block;
+            visibility: visible;
+            position: absolute;
+            top: 0;
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transition: all .7s ease-in-out;
+            -moz-transition: all .7s ease-in-out;
+            -ms-transition: all .7s ease-in-out;
+            -o-transition: all .7s ease-in-out;
+            transition: all .7s ease-in-out;
+        }
+        &:before{
+            content: " ";
+            width: 40px;
+            height: 4px;
+            background-color: $font-color;
+            display: block;
+            visibility: visible;
+            position: absolute;
+            margin-top: 9px;
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transition: all .7s ease-in-out;
+            -moz-transition: all .7s ease-in-out;
+            -ms-transition: all .7s ease-in-out;
+            -o-transition: all .7s ease-in-out;
+            transition: all .7s ease-in-out;
+        }
+}
