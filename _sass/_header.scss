@@ -14,12 +14,12 @@ header {
         line-height: 127px;
         float: left;
         a {
-            font-family: $roboto-condensed;
+            font-family: "Nunito";
             color: $font-color;
             text-decoration: none;
-            font-size: 25px;
+            font-size: 26px;
             font-weight: bold;
-            letter-spacing: 3.5px;
+            letter-spacing: 3px;
         }
     }
     &__list {

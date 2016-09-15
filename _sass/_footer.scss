@@ -1,5 +1,6 @@
 footer {
     width: 100%;
+    max-width: $hdwidth;
     margin: 0 auto;
     height: 450px;
     background-color: $background-footer;
@@ -32,3 +33,5 @@ footer {
 
     }
 }
+
+@import"social-links";

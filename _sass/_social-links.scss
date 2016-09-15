@@ -1,0 +1,56 @@
+.social {
+    padding-top: 255px;
+    margin-left: image-position(755px);
+	width: auto;
+    &__item {
+    	display: inline-block;
+        width: $social-size;
+        height: $social-size;
+        margin-right: 24px;
+        list-style: none;
+            &:last-child {
+	            margin-right: 0px;
+            }
+    }
+    &__link {
+      	width: $social-size;
+        height: $social-size;
+        display: block;
+        text-decoration: none;
+    }
+    &__icon {
+        background-image: url(../images/social-links.png);
+        background-repeat: no-repeat;
+        display: block;
+        &--twitter {
+            width: $social-size;
+            height: $social-size;
+            background-position: -280px -24px;
+        }
+        &--facebook {
+            width: $social-size;
+            height: $social-size;
+            background-position: -24px -24px;
+        }
+        &--ball {
+            width: $social-size;
+            height: $social-size;
+            background-position: -368px -24px;
+        }
+        &--github {
+            width: $social-size;
+            height: $social-size;
+            background-position: -110px -24px;
+        }
+        &--youtube {
+            width: $social-size;
+            height: $social-size;
+            background-position: -454px -24px;
+        }
+        &--google {
+           width: $social-size;
+           height: $social-size;
+           background-position: -196px -24px;
+        }
+    }
+}
