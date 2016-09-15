@@ -14,13 +14,18 @@ header {
     &__logo {
         width: 100%;
         margin-left: 0;
+        line-height: 127px;
         @include mediaQueries("tablet") {
-            margin-left: image-position(435px);
+            margin-left: image-position(600px);
             width: 175px;
             float: left;
         }
-        line-height: 127px;
-
+        @include mediaQueries("pablet") {
+            margin-left: image-position(485px);
+        }
+        @include mediaQueries("desktop-sm") {
+            margin-left: image-position(435px);
+        }
         a {
             font-family: "Nunito";
             color: $font-color;
@@ -34,17 +39,47 @@ header {
         width: 100%;
         float: none;
         padding-top: 0;
-        margin-top: 18px;
         text-align: center;
         line-height: normal;
+        margin: 0 auto;
+        margin-top: 20px;
         @extend .clearfix;
+        @include mediaQueries("tablet-sm") {
+            width: 75%;
+        }
         @include mediaQueries("tablet") {
-           width: 50%;
+           width: 65%;
            float: right;
            line-height: 127px;
+           margin-top: 10px;
+        }
+        @include mediaQueries("tablet-lg") {
+            width: 60%;
+        }
+        @include mediaQueries("desktop-sm") {
+            width: 50%;
         }
         &__item {
             display: block;
+            @include mediaQueries("tablet", max) {
+                background-color: $background-menu;
+                border-bottom: 1px solid $background-border;
+                border-left: 1px solid $background-border;
+                border-right: 1px solid $background-border;
+                border-radius: 4px;
+                    &:nth-child(1) {
+                        border-top: 1px solid $background-border;
+                    }
+                    &:hover {
+                    transform: scale(1.1,1);
+                    border-top: 1px solid $background-border;
+                    -webkit-transition: transform .7s ease-out;
+                    -moz-transition: transform .7s ease-out;
+                    -ms-transition: transform .7s ease-out;
+                    -o-transition: transform .7s ease-out;
+                    transition: transform .7s ease-out;
+                    }
+            }
             @include mediaQueries("tablet") {
                 float: left;
             }
@@ -55,11 +90,16 @@ header {
         text-align: center;
         display: block;
         width: 100%;
-        height: 75px;
+        height: 65px;
+        line-height: 65px;
         @include mediaQueries("tablet") {
-            width: 100px;
+            width: 84px;
             height: 100px;
+            line-height: 100px;
             font-size: 21px;
+        }
+        @include mediaQueries("tablet-lg") {
+            width: 100px;
         }
         font-family: $roboto;
         font-size: 26px;
@@ -67,14 +107,14 @@ header {
         text-decoration: none;
         color: $font-color;
         border-bottom: solid 1px transparent;
-        -webkit-transition: color .2s ease-out, border-bottom-color .2s ease-out;
-        -moz-transition: color .2s ease-out, border-bottom-color .2s ease-out;
-        -ms-transition: color .2s ease-out, border-bottom-color .2s ease-out;
-        -o-transition: color .2s ease-out, border-bottom-color .2s ease-out;
-        transition: color .2s ease-out, border-bottom-color .2s ease-out;
+        -webkit-transition: all .4s ease-out;
+        -moz-transition: all .4s ease-out;
+        -ms-transition: all .4s ease-out;
+        -o-transition: all .4s ease-out;
+        transition: all .4s ease-out;
             &:hover {
                 @include mediaQueries("tablet") {
-                    border-bottom: solid 1px #827957;
+                    border-bottom: solid 1px $background-border;
                 }
                 color: #1c1b1a;
             }
