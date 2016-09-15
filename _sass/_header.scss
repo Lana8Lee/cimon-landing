@@ -50,7 +50,7 @@ header {
             width: 75%;
         }
         @include mediaQueries("tablet") {
-           display: block;
+           display: block !important;
            width: 65%;
            float: right;
            line-height: 127px;
