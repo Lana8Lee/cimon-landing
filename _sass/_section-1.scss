@@ -33,7 +33,6 @@
         left: image-position(625px);
         text-align: center;
         z-index: 2;
-        font-family: $roboto-medium;
         font-weight: 500;
         &__head {
             color: $font-color;
@@ -42,8 +41,31 @@
         }
         &__text {
             color: $font-color;
-            font-size: 18px;
+            font-size: 21px;
             padding-top: 18px;
+        }
+        &__link {
+            display: block;
+            width: 185px;
+            height: 38px;
+            border-radius: 9px;
+            background-color: black;
+            color: $background-body;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: right;
+            padding-right: 9px;
+            line-height: 38px;
+            margin: 25px auto;
+        }
+        &__icon {
+            width: 18px;
+            height: 22px;
+            display: block;
+            float: left;
+            margin-top: 8px;
+            margin-left: 9px;
+            background-image: image-url("octocat.svg");
         }
     }
     &__figure {

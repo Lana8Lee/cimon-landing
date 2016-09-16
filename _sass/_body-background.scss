@@ -12,4 +12,5 @@ body {
     image-url("background_yellow_5.svg") top center repeat-y,
     $background-body;
     background-size: $hdwidth 3560px;
+    font-family: $roboto-condensed;
 }

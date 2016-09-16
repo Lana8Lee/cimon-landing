@@ -19,7 +19,7 @@
         text-decoration: none;
     }
     &__icon {
-        background-image: url(../images/social-links.png);
+        background-image: image-url("social-links.png");
         background-repeat: no-repeat;
         display: block;
         &--twitter {

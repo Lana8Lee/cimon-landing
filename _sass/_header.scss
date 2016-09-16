@@ -74,13 +74,7 @@ header {
                         border-top: 1px solid $background-border;
                     }
                     &:hover {
-                    transform: scale(1.1,1);
-                    border-top: 1px solid $background-border;
-                    -webkit-transition: transform .7s ease-out;
-                    -moz-transition: transform .7s ease-out;
-                    -ms-transition: transform .7s ease-out;
-                    -o-transition: transform .7s ease-out;
-                    transition: transform .7s ease-out;
+                        background-color: $background-footer;
                     }
             }
             @include mediaQueries("tablet") {
@@ -104,17 +98,16 @@ header {
         @include mediaQueries("tablet-lg") {
             width: 100px;
         }
-        font-family: $roboto;
         font-size: 26px;
         font-weight: 400;
         text-decoration: none;
         color: $font-color;
         border-bottom: solid 1px transparent;
-        -webkit-transition: all .4s ease-out;
-        -moz-transition: all .4s ease-out;
-        -ms-transition: all .4s ease-out;
-        -o-transition: all .4s ease-out;
-        transition: all .4s ease-out;
+        -webkit-transition: border-bottom .1s ease-out;
+        -moz-transition: border-bottom .1s ease-out;
+        -ms-transition: border-bottom .1s ease-out;
+        -o-transition: border-bottom .1s ease-out;
+        transition: border-bottom .1s ease-out;
             &:hover {
                 @include mediaQueries("tablet") {
                     border-bottom: solid 1px $background-border;
