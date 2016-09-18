@@ -46,17 +46,16 @@
         }
         &__link {
             display: block;
-            width: 185px;
-            height: 38px;
+            width: 33%;
+            height: auto;
             border-radius: 9px;
             background-color: black;
-            color: $background-body;
+            color: #FFF1AB;
             font-size: 18px;
             text-decoration: none;
-            text-align: right;
-            padding-right: 9px;
+            text-align: center;
             line-height: 38px;
-            margin: 25px auto;
+            margin: 3% auto;
         }
         &__icon {
             width: 18px;
