@@ -2,10 +2,9 @@
     padding-top: 255px;
     margin-left: image-position(725px);
 	width: auto;
+    @extend .clearfix;
     &__item {
-    	display: inline-block;
-        width: $social-size;
-        height: $social-size;
+    	float: left;
         margin-right: 24px;
         list-style: none;
             &:last-child {
@@ -17,40 +16,28 @@
         height: $social-size;
         display: block;
         text-decoration: none;
+        background-color: black;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 44px;
+        &:hover {
+            background-color: #484745;
+        }
     }
     &__icon {
-        background-image: image-url("social-links.png");
-        background-repeat: no-repeat;
+        color: $background-footer;
         display: block;
-        &--twitter {
-            width: $social-size;
-            height: $social-size;
-            background-position: -280px -24px;
-        }
-        &--facebook {
-            width: $social-size;
-            height: $social-size;
-            background-position: -24px -24px;
-        }
-        &--ball {
-            width: $social-size;
-            height: $social-size;
-            background-position: -368px -24px;
-        }
-        &--github {
-            width: $social-size;
-            height: $social-size;
-            background-position: -110px -24px;
-        }
-        &--youtube {
-            width: $social-size;
-            height: $social-size;
-            background-position: -454px -24px;
-        }
-        &--google {
-           width: $social-size;
-           height: $social-size;
-           background-position: -196px -24px;
-        }
+        font-size: 24px;
     }
 }
+
+.icon {
+    &-twitter {
+        font-size: 18px;
+    }
+    &-gplus {
+        font-size: 39px;
+        padding-top: 7px;
+    }
+}
+
