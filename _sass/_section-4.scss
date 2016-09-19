@@ -39,4 +39,14 @@
             height: 367px;
         }
     }
+    &__post {
+        &--4 {
+            border: none;
+            background-color: transparent;
+            top: 30px;
+        }
+        &--5 {
+            top: 665px;
+        }
+    }
 }

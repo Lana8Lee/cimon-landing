@@ -30,10 +30,14 @@
         background-color: $background-body;
         position: absolute;
         top: 60px;
-        left: image-position(625px);
+        left: 50%;
+        margin-left: -324px;
         text-align: center;
         z-index: 2;
         font-weight: 500;
+        &--inner {
+            width: 100%;
+        }
         &__head {
             color: $font-color;
             font-size: 36px;
@@ -44,7 +48,7 @@
             font-size: 21px;
             padding-top: 18px;
         }
-        &__link {
+        &__btn {
             display: block;
             width: 33%;
             height: auto;
