@@ -1,3 +1,5 @@
+@import"ontouch";
+
 .section {
     &--1{
         height: 780px;
@@ -60,15 +62,32 @@
             text-align: center;
             line-height: 38px;
             margin: 3% auto;
+            transition: color 0.7s;
+            &:hover {
+                background-color: #484745;
+            }
+            &:focus {
+                outline: none;
+                background-color: $background-border;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 54%;
+                left: 32%;
+                width: 239px;
+                height: 74px;
+                border-radius: 50%;
+                opacity: 0;
+                pointer-events: none;
+            }
         }
         &__icon {
-            width: 18px;
-            height: 22px;
+            font-size: 21px;
             display: block;
             float: left;
-            margin-top: 8px;
-            margin-left: 9px;
-            background-image: image-url("octocat.svg");
+            margin-top: 3px;
+            margin-left: 10px;
         }
     }
     &__figure {

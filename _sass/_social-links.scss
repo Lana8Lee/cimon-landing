@@ -16,16 +16,32 @@
         height: $social-size;
         display: block;
         text-decoration: none;
+        color: $background-footer;
         background-color: black;
         border-radius: 50%;
         text-align: center;
         line-height: 44px;
+        overflow: hidden;
         &:hover {
             background-color: #484745;
         }
+        &:focus {
+            outline: none;
+            background-color: $background-border;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 51%;
+            left: 43%;
+            width: 116px;
+            height: 99px;
+            border-radius: 50%;
+            opacity: 0;
+            pointer-events: none;
+        }
     }
     &__icon {
-        color: $background-footer;
         display: block;
         font-size: 24px;
     }
