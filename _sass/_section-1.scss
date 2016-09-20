@@ -76,7 +76,7 @@
             text-align: center;
             transition: color 0.7s;
             @include mediaQueries("phablet", max) {
-                line-height: 64px;
+                line-height: 45px;
                 padding: 2% 2%;
             }
             @include mediaQueries("tablet-sm") {
