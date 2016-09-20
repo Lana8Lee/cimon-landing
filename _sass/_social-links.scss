@@ -1,15 +1,23 @@
 .social {
+    @include mediaQueries("phablet", max) {
+        width: 320px;
+    }
     padding-top: 255px;
-    margin-left: image-position(725px);
-	width: auto;
+    margin: 0 auto;
+	width: 470px;
     @extend .clearfix;
     &__item {
     	float: left;
-        margin-right: 24px;
         list-style: none;
             &:last-child {
 	            margin-right: 0px;
             }
+        @include mediaQueries("phablet", max) {
+            margin-right: 5px;
+        }
+        @include mediaQueries("tablet-sm") {
+            margin-right: 24px;
+        }
     }
     &__link {
       	width: $social-size;
@@ -20,7 +28,7 @@
         background-color: black;
         border-radius: 50%;
         text-align: center;
-        line-height: 44px;
+        line-height: 52px;
         overflow: hidden;
         &:hover {
             background-color: #484745;

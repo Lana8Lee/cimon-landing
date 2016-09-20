@@ -76,6 +76,9 @@ header {
                     &:hover {
                         background-color: $background-footer;
                     }
+                    &:focus {
+                        background-color: $background-footer;
+                    }
             }
             @include mediaQueries("tablet") {
                 float: left;
@@ -97,6 +100,11 @@ header {
         }
         @include mediaQueries("tablet-lg") {
             width: 100px;
+        }
+        @include mediaQueries("phablet", max){
+            &:focus {
+                background-color: $background-footer;
+            }
         }
         font-size: 26px;
         font-weight: 400;

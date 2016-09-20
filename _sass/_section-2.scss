@@ -38,7 +38,12 @@
         &--2 {
             border: none;
             background-color: transparent;
-            top: 104px;
+            @include mediaQueries("phablet", max) {
+                top: 95px;
+            }
+            @include mediaQueries("tablet-sm") {
+                top: 104px;
+            }
         }
         &__text {
             &--2 {

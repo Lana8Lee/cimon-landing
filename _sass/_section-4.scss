@@ -19,7 +19,12 @@
             width: 1920px;
             height: 379px;
             bottom: 0;
-            left: image-position(0px);
+            @include mediaQueries("phablet", max) {
+                left: image-position(-204px);
+            }
+            @include mediaQueries("tablet-sm") {
+                left: image-position(0px);
+            }
         }
         &--4-4 {
             width: 324px;
@@ -33,7 +38,12 @@
         height: 367px;
         position: absolute;
         bottom: 0px;
-        right: image-position(500px);
+        @include mediaQueries("phablet", max) {
+            right: image-position(740px);
+        }
+        @include mediaQueries("tablet-sm") {
+            right: image-position(500px);
+        }
         img {
             width: 356px;
             height: 367px;
@@ -44,7 +54,12 @@
             width: 665px;
             border: none;
             background-color: transparent;
-            top: 30px;
+            @include mediaQueries("phablet", max) {
+                top: 5px;
+            }
+            @include mediaQueries("tablet-sm") {
+                top: 30px;
+            }
         }
         &--5 {
             top: 665px;

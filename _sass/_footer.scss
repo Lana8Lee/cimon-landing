@@ -16,7 +16,12 @@ footer {
             width: 239px;
             height: 155px;
             top: -37px;
-            right: image-position(451px);
+            @include mediaQueries("phablet", max) {
+                right: image-position(710px);
+            }
+            @include mediaQueries("tablet-sm") {
+                right: image-position(451px);
+            }
         }
     }
 }

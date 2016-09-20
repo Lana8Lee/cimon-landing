@@ -29,24 +29,52 @@
         }
     }
     &__post {
+       &--box {
+            @include mediaQueries("phablet", max) {
+                width: 215px;
+            }
+            @include mediaQueries("tablet-sm") {
+                width: 100%;
+            }
+        }
         span {
-            font-size: 24px;
+            @include mediaQueries("phablet", max) {
+                font-size: 20px;
+            }
+            @include mediaQueries("tablet-sm") {
+                font-size: 24px;
+            }
+            font-weight: 500;
         }
         &--3 {
-            width: 320px;
             height: auto;
-            left: image-position(680px);
             border: none;
             background-color: transparent;
-            top: 53px;
-            text-align: right;
+
             margin-left: 0;
+            @include mediaQueries("phablet", max) {
+                width: 212px;
+                text-align: left;
+                left: image-position(820px);
+                top: 36px;
+            }
+            @include mediaQueries("tablet-sm") {
+                width: 320px;
+                text-align: right;
+                left: image-position(680px);
+                top: 53px;
+            }
         }
         &__text {
             &--3 {
-               padding-bottom: 10%;
-               letter-spacing: -0.5px;
-        }
+                @include mediaQueries("phablet", max) {
+                    padding: 3% 0 10% 0;
+                }
+                @include mediaQueries("tablet-sm") {
+                    padding-bottom: 10%;
+                }
+                letter-spacing: -0.5px;
+            }
         }
     }
 }
