@@ -39,7 +39,7 @@
             border: none;
             background-color: transparent;
             @include mediaQueries("phablet", max) {
-                top: 95px;
+                top: 80px;
             }
             @include mediaQueries("tablet-sm") {
                 top: 104px;
