@@ -13,14 +13,14 @@ footer {
 .footer {
     &__img {
         &--1 {
-            width: 239px;
+            width: 2231px;
             height: 155px;
-            top: -37px;
+            top: -36px;
             @include mediaQueries("tablet-lg", max) {
-                right: image-position(690px);
+                right: image-position(-60px);
             }
             @include mediaQueries("tablet-lg") {
-                right: image-position(451px);
+                left: image-position(0px);
             }
         }
     }

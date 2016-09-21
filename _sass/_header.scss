@@ -21,11 +21,12 @@ header {
     &__logo {
         width: 100%;
         margin-left: 5%;
-        line-height: 127px;
+        line-height: 167px;
         @include mediaQueries("tablet-sm") {
             margin-left: 2%;
             width: 175px;
             float: left;
+            line-height: 127px;
         }
         @include mediaQueries("tablet-lg") {
             margin-left: image-position(435px);
@@ -54,7 +55,7 @@ header {
            width: 70%;
            float: right;
            line-height: 127px;
-           margin-top: 10px;
+           margin-top: 18px;
         }
         @include mediaQueries("tablet-lg") {
             width: 60%;
@@ -122,6 +123,9 @@ header {
                 color: #1c1b1a;
             }
             &--width {
+                @include mediaQueries("tablet-sm") {
+                      width: 122px;
+                }
                 @include mediaQueries("tablet") {
                     width: 150px;
                 }

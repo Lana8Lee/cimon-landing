@@ -1,14 +1,15 @@
 .social {
     @include mediaQueries("tablet-sm", max) {
-        width: 320px;
+        width: 290px;
     }
     padding-top: 255px;
     margin: 0 auto;
-	width: 470px;
+	width: 420px;
     @extend .clearfix;
     &__item {
     	float: left;
         list-style: none;
+        position: relative;
             &:last-child {
 	            margin-right: 0px;
             }
@@ -16,7 +17,19 @@
             margin-right: 5px;
         }
         @include mediaQueries("tablet-sm") {
-            margin-right: 24px;
+            margin: 0 12px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: -130px;
+            left: -130px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            opacity: 0;
+            pointer-events: none;
         }
     }
     &__link {
@@ -30,25 +43,12 @@
         text-align: center;
         line-height: 52px;
         overflow: hidden;
-        position: relative;
         &:hover {
             background-color: #484745;
         }
         &:focus {
             outline: none;
             background-color: $background-border;
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            display: block;
-            top: -130px;
-            left: -130px;
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            opacity: 0;
-            pointer-events: none;
         }
     }
     &__icon {

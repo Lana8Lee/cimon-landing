@@ -20,12 +20,14 @@ $(document).ready(function(){
         function(){
             $(this).addClass("btn--touched");
     });
-    $(".social__link").on("tap",
+    $(".social__item").on("tap",
         function(){
+            $(".social__item").removeClass("btn--touched");
             $(this).addClass("btn--touched");
     });
-    $(".social__link").on("click",
+    $(".social__item").on("click",
         function(){
+            $(".social__item").removeClass("btn--touched");
             $(this).addClass("btn--touched");
     });
 });
