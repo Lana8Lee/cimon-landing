@@ -38,11 +38,8 @@
         height: 367px;
         position: absolute;
         bottom: 0px;
-        @include mediaQueries("tablet-sm", max) {
-            right: image-position(740px);
-        }
-        @include mediaQueries("tablet-sm") {
-            right: image-position(675px);
+        @include mediaQueries("tablet-lg", max) {
+            right: image-position(760px);
         }
         @include mediaQueries("tablet-lg") {
             right: image-position(500px);
