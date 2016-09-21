@@ -30,7 +30,7 @@
     }
     &__post {
        &--box {
-            @include mediaQueries("phablet", max) {
+            @include mediaQueries("tablet-sm", max) {
                 width: 215px;
             }
             @include mediaQueries("tablet-sm") {
@@ -38,7 +38,7 @@
             }
         }
         span {
-            @include mediaQueries("phablet", max) {
+            @include mediaQueries("tablet-sm", max) {
                 font-size: 20px;
             }
             @include mediaQueries("tablet-sm") {
@@ -52,7 +52,7 @@
             background-color: transparent;
 
             margin-left: 0;
-            @include mediaQueries("phablet", max) {
+            @include mediaQueries("tablet-sm", max) {
                 width: 212px;
                 text-align: left;
                 left: image-position(820px);
@@ -67,7 +67,7 @@
         }
         &__text {
             &--3 {
-                @include mediaQueries("phablet", max) {
+                @include mediaQueries("tablet-sm", max) {
                     padding: 3% 0 10% 0;
                 }
                 @include mediaQueries("tablet-sm") {

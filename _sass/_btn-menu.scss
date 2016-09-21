@@ -1,6 +1,6 @@
 .nav {
     &__btn {
-        @include mediaQueries("tablet") {
+        @include mediaQueries("tablet-sm") {
             display: none;
         }
         display: block;
