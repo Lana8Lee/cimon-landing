@@ -3,6 +3,10 @@
 @return url("../images/" + $image_name);
 }
 
+@function font-url($font_name) {
+@return url("../font/" + $font_name);
+}
+
 @function image-position($x) {
 @return calc(50% - #{960px - $x});
 }
