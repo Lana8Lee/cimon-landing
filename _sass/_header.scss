@@ -12,9 +12,6 @@ header {
     width: 100%;
     height: auto;
     @extend .clearfix;
-    @include mediaQueries("tablet-lg", max) {
-//        padding: 1.5rem;
-    }
     @include mediaQueries("tablet-lg") {
         padding: 1.5rem 3rem;
     }
