@@ -21,8 +21,13 @@
             width: 1920px;
             height: 548px;
             top: 341px;
-            left: image-position(0px);
             z-index: 1;
+            @include mediaQueries("tablet-lg", max) {
+                left: image-position(260px);
+            }
+            @include mediaQueries("tablet-lg") {
+                left: image-position(0px);
+            }
         }
     }
     &__post {
@@ -30,9 +35,9 @@
         @include mediaQueries("tablet-sm", max) {
                 height: 231px;
             }
-            @include mediaQueries("tablet-sm") {
+        @include mediaQueries("tablet-sm") {
                 height: 196px;
-            }
+        }
         border: 1px solid $background-border;
         background-color: $background-body;
         position: absolute;
@@ -44,7 +49,7 @@
         font-weight: 500;
         &--inner {
             @include mediaQueries("tablet-sm", max) {
-                width: 300px;
+                width: 320px;
                 margin: 0 auto;
             }
             @include mediaQueries("tablet-sm") {
@@ -53,18 +58,21 @@
         }
         &__head {
             color: $font-color;
-            font-size: 36px;
+            text-transform: uppercase;
             @include mediaQueries("tablet-sm", max) {
+                font-size: 32px;
                 margin-top: 18px;
             }
             @include mediaQueries("tablet-sm") {
+                font-size: 36px;
                 margin-top: 33px;
             }
         }
         &__text {
             color: $font-color;
+            padding-bottom: 25px;
             @include mediaQueries("tablet-sm", max) {
-                font-size: 20px;
+                font-size: 19px;
                 padding-top: 3px;
             }
             @include mediaQueries("tablet-sm") {
@@ -81,12 +89,10 @@
             text-align: center;
             transition: color 0.7s;
             @include mediaQueries("tablet-sm", max) {
-                line-height: 70px;
-                padding: 2% 2%;
+                padding: 0.7rem;
             }
             @include mediaQueries("tablet-sm") {
-                line-height: 100px;
-                padding: 1% 2%;
+                padding: 0.7rem;
             }
             &:hover {
                 background-color: #484745;
@@ -117,14 +123,20 @@
             height: 185px;
             position: absolute;
             bottom: 51px;
-            left: image-position(0px);
+            @include mediaQueries("tablet-lg", max) {
+                left: image-position(260px);
+            }
+            @include mediaQueries("tablet-lg") {
+                left: image-position(0px);
+            }
             @extend .clearfix;
             img {
                 width: 163px;
                 height: 182px;
                 float: left;
                 @include mediaQueries("tablet-lg", max) {
-                    margin-left: 36px;
+//                    margin-left: 36px;
+                    margin-right: 36px;
                 }
                 @include mediaQueries("tablet-lg") {
                     margin-right: 36px;

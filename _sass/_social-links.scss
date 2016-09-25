@@ -6,7 +6,7 @@
     }
     padding-top: 255px;
     margin: 0 auto;
-	width: 420px;
+	width: 21%;
     @extend .clearfix;
     &__item {
     	float: left;
@@ -19,7 +19,7 @@
             margin-right: 5px;
         }
         @include mediaQueries("tablet-sm") {
-            margin: 0 12px;
+            margin: 0 24px;
         }
         &::after {
             content: '';
