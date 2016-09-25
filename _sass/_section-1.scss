@@ -22,10 +22,10 @@
             height: 548px;
             top: 341px;
             z-index: 1;
-            @include mediaQueries("tablet-lg", max) {
-                left: image-position(260px);
+            @include mediaQueries("tablet-sm", max) {
+                left: image-position(190px);
             }
-            @include mediaQueries("tablet-lg") {
+            @include mediaQueries("tablet-sm") {
                 left: image-position(0px);
             }
         }
@@ -123,10 +123,10 @@
             height: 185px;
             position: absolute;
             bottom: 51px;
-            @include mediaQueries("tablet-lg", max) {
-                left: image-position(260px);
+            @include mediaQueries("tablet-sm", max) {
+                left: image-position(190px);
             }
-            @include mediaQueries("tablet-lg") {
+            @include mediaQueries("tablet-sm") {
                 left: image-position(0px);
             }
             @extend .clearfix;
@@ -135,8 +135,7 @@
                 height: 182px;
                 float: left;
                 @include mediaQueries("tablet-lg", max) {
-//                    margin-left: 36px;
-                    margin-right: 36px;
+                    margin-left: 32px;
                 }
                 @include mediaQueries("tablet-lg") {
                     margin-right: 36px;
