@@ -26,24 +26,30 @@
                 left: image-position(190px);
             }
             @include mediaQueries("tablet-sm") {
+                left: image-position(60px);
+            }
+            @include mediaQueries("tablet-lg") {
                 left: image-position(0px);
             }
         }
     }
     &__post {
-        width: 649px;
         @include mediaQueries("tablet-sm", max) {
+                width: 100%;
                 height: 231px;
+                margin: auto;
+                left: 0;
             }
         @include mediaQueries("tablet-sm") {
+                width: 649px;
                 height: 196px;
+                left: 50%;
+                margin-left: -324px;
         }
         border: 1px solid $background-border;
         background-color: $background-body;
         position: absolute;
         top: 60px;
-        left: 50%;
-        margin-left: -324px;
         text-align: center;
         z-index: 2;
         font-weight: 500;
@@ -70,14 +76,12 @@
         }
         &__text {
             color: $font-color;
-            padding-bottom: 25px;
+            padding: 0.6rem 0 3rem;
             @include mediaQueries("tablet-sm", max) {
                 font-size: 19px;
-                padding-top: 3px;
             }
             @include mediaQueries("tablet-sm") {
                 font-size: 21px;
-                padding-top: 18px;
             }
         }
         &__btn {
@@ -88,6 +92,7 @@
             text-decoration: none;
             text-align: center;
             transition: color 0.7s;
+            vertical-align: baseline;
             @include mediaQueries("tablet-sm", max) {
                 padding: 0.7rem;
             }
@@ -114,7 +119,8 @@
             }
         }
         &__icon {
-            margin-right: 7px;
+            margin-right: 0.5rem;
+            font-size: 16px;
         }
     }
     &__figure {
@@ -127,6 +133,9 @@
                 left: image-position(190px);
             }
             @include mediaQueries("tablet-sm") {
+                left: image-position(40px);
+            }
+            @include mediaQueries("tablet-lg") {
                 left: image-position(0px);
             }
             @extend .clearfix;

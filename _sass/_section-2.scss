@@ -7,7 +7,15 @@
             width: 1488px;
             height: 710px;
             top: 8px;
-            left: image-position(0px);
+            @include mediaQueries("tablet-sm", max) {
+                left: image-position(190px);
+            }
+            @include mediaQueries("tablet-sm") {
+                left: image-position(10px);
+            }
+            @include mediaQueries("tablet-lg") {
+                left: image-position(0px);
+            }
         }
         &--2-2 {
             width: 1920px;
@@ -31,13 +39,26 @@
             width: 649px;
             height: 261px;
             top: 654px;
-            left: image-position(0px);
+             @include mediaQueries("tablet-lg", max) {
+                  left: image-position(10px);
+              }
+              @include mediaQueries("tablet-lg") {
+                  left: image-position(0px);
+              }
         }
         &--2-6 {
             width: 600px;
             height: 400px;
             top: 283px;
-            left: image-position(660px);
+            @include mediaQueries("tablet-sm", max) {
+                left: image-position(850px);
+            }
+            @include mediaQueries("tablet-sm") {
+                left: image-position(670px);
+            }
+            @include mediaQueries("tablet-lg") {
+                left: image-position(660px);
+            }
         }
     }
     &__post {

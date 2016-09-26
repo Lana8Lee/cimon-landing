@@ -1,25 +1,23 @@
 @import"social-font";
 
+nav {
+
+}
+
 .social {
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
     @include mediaQueries("tablet-sm", max) {
-        width: 290px;
+
     }
-    padding-top: 255px;
-    margin: 0 auto;
-	width: 21%;
-    @extend .clearfix;
     &__item {
-    	float: left;
-        list-style: none;
-        position: relative;
-            &:last-child {
-	            margin-right: 0px;
-            }
+        display: flex;
         @include mediaQueries("tablet-sm", max) {
-            margin-right: 5px;
+            padding: 1rem;
         }
         @include mediaQueries("tablet-sm") {
-            margin: 0 24px;
+            padding: 1rem 2rem;
         }
         &::after {
             content: '';
@@ -35,16 +33,11 @@
         }
     }
     &__link {
-      	width: $social-size;
-        height: $social-size;
-        display: block;
+        padding: 0.6rem 0.8rem;
         text-decoration: none;
         color: $background-footer;
         background-color: black;
         border-radius: 50%;
-        text-align: center;
-        line-height: 52px;
-        overflow: hidden;
         &:hover {
             background-color: #484745;
         }
@@ -54,18 +47,6 @@
         }
     }
     &__icon {
-        display: block;
-        font-size: 24px;
+        font-size: 21px;
     }
 }
-
-.icon {
-    &-twitter {
-        font-size: 18px;
-    }
-    &-gplus {
-        font-size: 39px;
-        padding-top: 7px;
-    }
-}
-

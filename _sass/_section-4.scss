@@ -39,7 +39,7 @@
         position: absolute;
         bottom: 0px;
         @include mediaQueries("tablet-lg", max) {
-            right: image-position(760px);
+            right: image-position(750px);
         }
         @include mediaQueries("tablet-lg") {
             right: image-position(500px);
@@ -51,20 +51,21 @@
     }
     &__post {
         &--4 {
-            @include mediaQueries("tablet-lg", max) {
+            border: none;
+            background-color: transparent;
+            @include mediaQueries("tablet-sm", max) {
+                top: 5px;
+                left: 50%;
+                width: 320px;
+                margin-left: -160px;
+            }
+            @include mediaQueries("tablet-sm") {
+                top: 30px;
                 width: 608px;
                 margin-left: -304px;
             }
             @include mediaQueries("tablet-lg") {
                 width: 665px;
-            }
-            border: none;
-            background-color: transparent;
-            @include mediaQueries("tablet-sm", max) {
-                top: 5px;
-            }
-            @include mediaQueries("tablet-sm") {
-                top: 30px;
             }
         }
         &--5 {

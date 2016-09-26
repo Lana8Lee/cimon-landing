@@ -26,15 +26,19 @@
             height: 498px;
             top: 0;
             right: image-position(0px);
+            z-index: 3;
         }
     }
     &__post {
        &--box {
             @include mediaQueries("tablet-sm", max) {
-                width: 215px;
+                width: 212px;
+                margin-left: 5%;
             }
             @include mediaQueries("tablet-sm") {
-                width: 100%;
+                width: 90%;
+                margin-left: 10%;
+                margin-right: 0;
             }
         }
         span {
@@ -50,19 +54,22 @@
             height: auto;
             border: none;
             background-color: transparent;
-
             margin-left: 0;
+            padding-top: 3.5rem;
             @include mediaQueries("tablet-sm", max) {
-                width: 212px;
+                width: 385px;
                 text-align: left;
-                left: image-position(820px);
+                left: image-position(800px);
                 top: 17px;
             }
             @include mediaQueries("tablet-sm") {
-                width: 320px;
+                width: 400px;
                 text-align: right;
-                left: image-position(680px);
-                top: 53px;
+                left: image-position(620px);
+                top: 1px;
+            }
+            @include mediaQueries("tablet-lg", max) {
+                background-color: $background-body;
             }
         }
         &__text {
