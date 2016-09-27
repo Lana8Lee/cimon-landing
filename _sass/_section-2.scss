@@ -67,6 +67,9 @@
             background-color: transparent;
             @include mediaQueries("tablet-sm", max) {
                 top: 80px;
+                left: 50%;
+                width: 320px;
+                margin-left: -160px;
             }
             @include mediaQueries("tablet-sm") {
                 top: 104px;
