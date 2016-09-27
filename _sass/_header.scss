@@ -22,6 +22,9 @@ header {
     @include mediaQueries("tablet-lg") {
         padding: 1.5rem 3rem;
     }
+    @include mediaQueries("desktop-lg") {
+        width: 80%;
+    }
     &__logo {
         width: 100%;
         margin-left: 5%;
