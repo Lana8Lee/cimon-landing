@@ -47,17 +47,17 @@
               }
         }
         &--2-6 {
-            width: 600px;
-            height: 400px;
-            top: 283px;
+            width: 605px;
+            height: 404px;
+            top: 281px;
             @include mediaQueries("tablet-sm", max) {
-                left: image-position(850px);
+                left: image-position(847px);
             }
             @include mediaQueries("tablet-sm") {
-                left: image-position(670px);
+                left: image-position(667px);
             }
             @include mediaQueries("tablet-lg") {
-                left: image-position(660px);
+                left: image-position(657px);
             }
         }
     }

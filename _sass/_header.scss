@@ -47,7 +47,7 @@ header {
         @include mediaQueries("tablet-sm", max) {
            display: none;
            flex-wrap: wrap;
-           width: 99vw;
+           width: 98vw;
            margin: 0 auto;
         }
         @include mediaQueries("tablet-sm") {
