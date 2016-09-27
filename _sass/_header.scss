@@ -47,7 +47,9 @@ header {
         @include mediaQueries("tablet-sm", max) {
            display: none;
            flex-wrap: wrap;
-            }
+           width: 99vw;
+           margin: 0 auto;
+        }
         @include mediaQueries("tablet-sm") {
             display: -webkit-flex;
             display: -moz-flex;
@@ -56,6 +58,8 @@ header {
             display: flex;
             width: 90%;
             justify-content: flex-end;
+            align-content: center;
+            margin: auto;
         }
         @include mediaQueries("tablet-lg") {
             width: 65%;

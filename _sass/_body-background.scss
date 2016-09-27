@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto Condensed"), local("Roboto Condensed-Regular"), url("https://fonts.gstatic.com/s/Roboto Condensed/v4/jObgDQiPUtmACAaaK3pMG6CWcynf_cDxXwCLxiixG1c.ttf"), format("truetype");
+}
+
 html {
     font-size: 16px;
 }
@@ -17,4 +24,8 @@ body {
     $background-body;
     background-size: $hdwidth 3560px;
     font-family: $roboto-condensed;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }

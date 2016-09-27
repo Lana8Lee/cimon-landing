@@ -1,9 +1,5 @@
 @import"social-font";
 
-nav {
-
-}
-
 .social {
     display: flex;
     justify-content: center;
@@ -18,18 +14,6 @@ nav {
         }
         @include mediaQueries("tablet-sm") {
             padding: 1rem 2rem;
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            display: block;
-            top: -130px;
-            left: -130px;
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            opacity: 0;
-            pointer-events: none;
         }
     }
     &__link {
