@@ -12,7 +12,10 @@
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
   @font-face {
     font-family: 'social-links';
     src: font-url('social-links.svg?6159673#social-links') format('svg');

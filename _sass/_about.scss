@@ -1,5 +1,21 @@
 .container--about {
     main {
-        height: 4000px;
+        height: 100%;
+        section {
+            width: 70%;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+            img {
+                width: 163px;
+                height: 182px;
+                float: left;
+                margin-right: 70px;
+                position: static;
+            }
+            p {
+                padding: 1rem;
+            }
+        }
     }
 }

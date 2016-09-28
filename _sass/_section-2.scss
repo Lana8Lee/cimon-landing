@@ -48,16 +48,16 @@
         }
         &--2-6 {
             width: 589px;
-            height: 349px;
-            top: 320px;
+            height: auto;
+            top: 340px;
             @include mediaQueries("tablet-sm", max) {
-                left: image-position(860px);
+                left: image-position(854px);
             }
             @include mediaQueries("tablet-sm") {
-                left: image-position(680px);
+                left: image-position(676px);
             }
             @include mediaQueries("tablet-lg") {
-                left: image-position(670px);
+                left: image-position(666px);
             }
         }
     }
