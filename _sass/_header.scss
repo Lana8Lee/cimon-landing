@@ -74,6 +74,7 @@ header {
             display: -o-inline-flex;
             display: inline-flex;
             align-items: center;
+            box-sizing: border-box;
             @include mediaQueries("tablet-sm", max) {
                 width: 100%;
                 background-color: $background-menu;
