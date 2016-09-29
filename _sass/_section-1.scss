@@ -76,6 +76,9 @@
             @include mediaQueries("tablet-sm") {
                 font-size: 21px;
             }
+            @include mediaQueries("desktop-hd") {
+                padding: 0.6rem 0 1rem;
+            }
         }
         &__btn {
             border-radius: 9px;
