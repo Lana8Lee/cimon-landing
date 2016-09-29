@@ -2,6 +2,9 @@
      main {
         height: 100%;
         section {
+            @include mediaQueries("tablet-sm", max) {
+                width: 90vw;
+            }
             width: 70%;
             height: auto;
             margin: 0 auto;
@@ -14,6 +17,9 @@
                 text-align: center;
             }
             img {
+                @include mediaQueries("tablet-sm", max) {
+                    margin: 10px 60px;
+                }
                 width: 163px;
                 height: 182px;
                 margin: 30px;
