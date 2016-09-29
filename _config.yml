@@ -14,13 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Continuous integration service – cimon.io
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+email: cimon@cimon.io
+description: >
+ Cimon is a platform for building your applications and run staging servers.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://lana8lee.github.io" # the base hostname & protocol for your site
 prefix: "/cimon-landing"
 
 # Build settings
