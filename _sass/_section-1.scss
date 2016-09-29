@@ -55,6 +55,7 @@
         font-weight: 500;
         &__head {
             color: $font-color;
+            background-color: $background-body;
             text-transform: uppercase;
             @include mediaQueries("tablet-sm", max) {
                 font-size: 32px;
@@ -67,6 +68,7 @@
         }
         &__text {
             color: $font-color;
+            background-color: $background-body;
             padding: 0.6rem 0 3rem;
             @include mediaQueries("tablet-sm", max) {
                 font-size: 19px;

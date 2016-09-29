@@ -5,18 +5,31 @@
             width: 70%;
             height: auto;
             margin: 0 auto;
-            text-align: center;
+            background-color: $background-body;
+            border: 1px solid $background-border;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-bottom: 50px;
+            div {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+            }
             img {
                 width: 163px;
                 height: 182px;
-                margin-right: 70px;
+                margin: 30px;
                 position: static;
             }
             p {
-                padding: 1rem;
-                font-size: 21px;
-                font-weight: 200;
-                line-height: 1.5;
+                padding: 2.7rem 1rem;
+                font-size: 17px;
+                line-height: 1.7;
+                span {
+                    font-weight: 600;
+                }
             }
         }
     }
