@@ -76,8 +76,8 @@
             @include mediaQueries("tablet-sm") {
                 font-size: 21px;
             }
-            @include mediaQueries("desktop-hd") {
-                padding: 0.6rem 0 1rem;
+            @include mediaQueries("desktop-tv") {
+                padding: 0.7rem 0;
             }
         }
         &__btn {
@@ -94,6 +94,9 @@
             }
             @include mediaQueries("tablet-sm") {
                 padding: 0.7rem;
+            }
+            @include mediaQueries("desktop-tv") {
+                padding: 0.2rem 0.7rem;
             }
             &:hover {
                 background-color: #484745;
