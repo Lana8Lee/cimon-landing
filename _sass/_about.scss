@@ -1,5 +1,10 @@
 .container--about {
-     main {
+    .nav__list__item:nth-child(1) {
+        .nav__link {
+		    font-weight: 800;
+        }
+    }
+    main {
         height: 100%;
         section {
             @include mediaQueries("tablet-sm", max) {
