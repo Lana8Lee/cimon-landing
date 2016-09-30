@@ -33,7 +33,7 @@
        &--box {
             @include mediaQueries("tablet-sm", max) {
                 width: 212px;
-                margin-left: 5%;
+                margin-left: 0.5rem;
             }
             @include mediaQueries("tablet-sm") {
                 width: 90%;
