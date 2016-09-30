@@ -66,21 +66,10 @@
                 width: 400px;
                 text-align: right;
                 left: image-position(620px);
-                top: 1px;
+                top: 14px;
             }
             @include mediaQueries("tablet-lg", max) {
                 background-color: $background-body;
-            }
-        }
-        &__text {
-            &--3 {
-                @include mediaQueries("tablet-sm", max) {
-                    padding: 3% 0 10% 0;
-                }
-                @include mediaQueries("tablet-sm") {
-                    padding-bottom: 10%;
-                }
-                letter-spacing: -0.5px;
             }
         }
     }
