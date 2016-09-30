@@ -16,7 +16,7 @@
 title: Continuous integration service – cimon.io
 email: cimon@cimon.io
 description: >
- Cimon is an continuous integration platform and hosting for the staging servers at once. Test and run everythyng you want!
+ Cimon is a powerful platform as a service for building your applications based on any tools, services and languages to run automatic tests and run staging servers without any additional clicks.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lana8lee.github.io"
 prefix: "/cimon-landing"
