@@ -49,9 +49,12 @@
              }
         }
         &--2-6 {
+            background-image: image-url("screen.png");
+            background-size: 611px 415px;
             width: 611px;
-            height: 413px;
-            top: 276px;
+            height: 415px;
+            position: absolute;
+            top: 275px;
             z-index: 1;
             @include mediaQueries("tablet-sm", max) {
                 left: image-position(842px);
@@ -61,6 +64,12 @@
             }
             @include mediaQueries("tablet-lg") {
                 left: image-position(654px);
+            }
+            @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+            only screen and (-moz-min-device-pixel-ratio: 1.5),
+            only screen and (-o-min-device-pixel-ratio: 3/2),
+            only screen and (min-device-pixel-ratio: 1.5) {
+                background-image: image-url("screen@2x.png");
             }
         }
     }
