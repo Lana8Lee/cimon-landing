@@ -8,4 +8,8 @@ $(document).ready(function(){
             $(".nav__list").toggle();
             $(".nav__btn__icon").toggleClass("active");
     });
+    $(".nav__link").click(function(){
+        $(".nav__link").removeClass("nav__link--active");
+        $(this).addClass("nav__link--active");
+    });
 });

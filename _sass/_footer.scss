@@ -4,26 +4,6 @@ footer {
     margin: 0 auto;
     height: 450px;
     background-color: $background-footer;
-    position: relative;
-    img {
-        position: absolute;
-    }
-}
-
-.footer {
-    &__img {
-        &--1 {
-            width: 2231px;
-            height: 155px;
-            top: -36px;
-            @include mediaQueries("tablet-lg", max) {
-                right: image-position(-60px);
-            }
-            @include mediaQueries("tablet-lg") {
-                left: image-position(0px);
-            }
-        }
-    }
 }
 
 @import"social-links";

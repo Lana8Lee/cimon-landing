@@ -18,20 +18,20 @@
               display: -ms-flex;
               display: -o-flex;
               display: flex;
-        }
+          }
         }
         img {
-                width: 163px;
+            width: 163px;
             height: 182px;
-            margin: 30px;
+            margin: 50px 30px;
             position: static;
         }
         p {
-            padding: 2.7rem 1rem;
+            padding: 0rem 1rem;
             font-size: 17px;
             line-height: 1.7;
             span {
-                    font-weight: 600;
+                font-weight: 600;
             }
         }
 }

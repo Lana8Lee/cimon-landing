@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: Terms-and-conditions
 permalink: /docs/terms-and-conditions/
 ---
 

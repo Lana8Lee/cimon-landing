@@ -17,10 +17,11 @@
         }
         &--4-3 {
             width: 1920px;
-            height: 379px;
-            bottom: 0;
+            height: 497px;
+            bottom: -118px;
+            z-index: 1;
             @include mediaQueries("tablet-lg", max) {
-                left: image-position(-204px);
+                left: image-position(-255px);
             }
             @include mediaQueries("tablet-lg") {
                 left: image-position(0px);
