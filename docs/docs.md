@@ -1,0 +1,19 @@
+---
+layout: default
+title: About
+permalink: /docs/
+---
+
+<section class="section__docs">
+    <div>
+        <img src="{{"/images/cimon.svg" | prepend: site.prefix }}" alt="">
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit earum distinctio ipsa.</span><br>Praesentium harum sapiente illum fuga, corporis tenetur quos facilis! Temporibus quos alias accusamus quas labore quod consequatur magni eveniet delectus dolores perspiciatis praesentium veritatis possimus aliquam rem, tenetur ducimus dolorum expedita qui, doloremque officiis vero maxime voluptatem voluptate! Esse animi accusamus, ratione et earum corporis facilis vel non. Soluta ea accusantium illo molestias rerum fuga eaque sequi laborum minima repellat adipisci, distinctio delectus, sed aut voluptatem eum est suscipit deleniti reiciendis tenetur quasi repellendus harum accusamus possimus. Delectus dolor aspernatur dolores quaerat aut unde debitis dicta culpa error!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea illum quos molestias totam, quibusdam facere beatae recusandae sunt ducimus repudiandae, repellat cum. Ea illum quos optio qui quis dicta et ad hic at adipisci. Placeat repellat, eos cupiditate. Molestiae quaerat eos non necessitatibus laboriosam quos quibusdam iste vel quae rem!
+        </p>
+    </div>
+    <div>
+        <img src="{{"/images/cimon-hand-up.svg" | prepend: site.prefix }}" alt="">
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit earum distinctio ipsa.</span><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit earum distinctio ipsa. Praesentium harum sapiente illum fuga, corporis tenetur quos facilis! Temporibus quos alias accusamus quas labore quod consequatur magni eveniet delectus dolores perspiciatis praesentium veritatis possimus aliquam rem, tenetur ducimus dolorum expedita qui, doloremque officiis vero maxime voluptatem voluptate! Esse animi accusamus, ratione et earum corporis facilis vel non. Soluta ea accusantium illo molestias rerum fuga eaque sequi laborum minima repellat adipisci, distinctio delectus, sed aut voluptatem eum est suscipit deleniti reiciendis tenetur quasi repellendus harum accusamus possimus. Delectus dolor aspernatur dolores quaerat aut unde debitis dicta culpa error!laborum minima repellat adipisci, distinctio delectus, sed aut voluptatem eum est suscipit deleniti reiciendis tenetur quasi repellendus harum accusamus possimus. Delectus dolor aspernatur dolores quaerat aut unde debitis dicta culpa rem!
+        </p>
+    </div>
+</section>

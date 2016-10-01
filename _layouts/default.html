@@ -11,7 +11,10 @@
 <body>
     <div class="container">
         {% include borders.html %}
-        {% include main.html %}
+        <main>
+        {% include header.html %}
+        {{ content }}
+        </main>
         {% include footer.html %}
         {% include javascript.html %}
     </div>

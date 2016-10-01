@@ -1,0 +1,11 @@
+---
+layout: default
+title: About
+permalink: /docs/getting-started/
+---
+
+<section class="section__docs">
+    <p>
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. In asperiores excepturi provident id fugiat, repellat, deleniti repudiandae odit dolorem neque, impedit accusamus incidunt, voluptas culpa ut soluta necessitatibus doloremque quisquam. Labore quibusdam amet aliquam voluptate velit repellat earum, similique, quo tempore! Soluta neque doloremque sint sequi molestias libero voluptate nihil magni cum blanditiis pariatur, fugit totam quo a maxime ad, nostrum voluptas id sit maiores debitis illo hic voluptates esse. Error odio dolor porro rem dicta impedit! Eum, deserunt vitae, placeat minima dolorem totam deleniti quam cupiditate, dolorum impedit quia facilis eos est odio! Corrupti iusto temporibus consequuntur ut provident voluptates, rerum harum recusandae numquam necessitatibus, sapiente, veritatis nesciunt nostrum, accusamus fugit repudiandae architecto minus explicabo laudantium! Deserunt cum porro, neque sed mollitia iste nobis perferendis. Esse cumque deleniti non aliquam soluta, pariatur harum aliquid libero qui molestiae, possimus commodi minus itaque reiciendis blanditiis consequuntur hic? Ut sed id officia neque vero facere debitis odio doloremque, optio aut, quidem corporis dignissimos laudantium mollitia deserunt suscipit animi? Accusantium quidem odio fuga qui minima nobis vel, ad aspernatur sunt id, voluptate animi esse pariatur enim quo ratione ducimus. Magnam officia modi aperiam blanditiis autem, numquam deleniti accusamus illo sint ratione alias animi perspiciatis inventore sapiente, esse consequuntur delectus ullam, at quisquam! Reiciendis, ipsum. Laborum nisi accusamus aut voluptatibus dolores, magni sequi perspiciatis placeat itaque doloribus, eius eveniet. Quo nobis aut atque voluptate sed, deleniti libero cumque delectus. Perferendis quaerat doloribus officia, id placeat assumenda eveniet distinctio reiciendis quae. Enim, non! Sapiente, reprehenderit.
+    </p>
+</section>
